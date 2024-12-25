@@ -1,5 +1,5 @@
 DLMS_Meter Component
-==============
+====================
 
 .. seo::
     :description: Instructions for setting up DLMS Meter component in ESPHome.
