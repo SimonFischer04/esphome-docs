@@ -3,12 +3,12 @@ DLMS_Meter Component
 
 .. seo::
     :description: Instructions for setting up DLMS Meter component in ESPHome.
-    :image: dsmr.svg
+    :image: dlms_meter.jpg
 
 Component
 -------------
 
-The DLMS_Meter component connects to Smart Meters which use the encrypted DLMS/Cosem protocol over uart. These smartmeters are used for example everywhere here in Austria.
+The DLMS_Meter component connects to Smart Meters which use the encrypted DLMS/Cosem protocol over uart. These smartmeters are used for example everywhere in Austria.
 
 **To use this component an mbus to uart adapter is required!**
 
@@ -118,7 +118,7 @@ data which this component decodes and updates the configured sensors at the pace
 
 Configuration variables:
 
-- **decryption_key** (*Optional*, string, :ref:`templatable <config-templatable>`, 32 characters, case insensitive): The key to decrypt the
+- **decryption_key** (**Required**, string, :ref:`templatable <config-templatable>`, 32 characters, case insensitive): The key to decrypt the
   telegrams. Request this from your provider / grid operator.
 - **provider** (*Optional*): Your grid operator. Options are
 
